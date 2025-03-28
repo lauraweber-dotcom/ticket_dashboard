@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 
 # Charger les variables d'environnement depuis le fichier .env
-load_dotenv()
+#load_dotenv()
 
 # Exemple d'utilisation des variables d'environnement dans ton code
 db_host = st.secret('DB_HOST')
