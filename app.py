@@ -11,10 +11,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Exemple d'utilisation des variables d'environnement dans ton code
-db_host = os.getenv('DB_HOST')
-db_user = os.getenv('DB_USER')
-db_password = os.getenv('DB_PASSWORD')
-db_name = os.getenv('DB_NAME')
+db_host = st.secret('DB_HOST')
+db_user = st.secret('DB_USER')
+db_password = st.secret('DB_PASSWORD')
+db_name = st.secret('DB_NAME')
 
 # --- IMPORTANT : CONFIGURER LA PAGE EN PREMIER ---
 st.set_page_config(layout="wide")
